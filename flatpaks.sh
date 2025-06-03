@@ -31,5 +31,7 @@ sudo flatpak install \
  org.kde.kalzium \
  org.learningequality.Kolibri \
  net.xm1math.Texmaker \	
- 
- 
+ org.gnome.World.Iotas \
+ de.haeckerfelix.Shortwave \
+ info.mumble.Mumble \
+ org.gnome.World.Secrets \
