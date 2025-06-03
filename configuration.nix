@@ -112,6 +112,9 @@
    RStudio-with-my-packages
    R-with-my-packages
    texliveFull
+   pymol
+   kdePackages.kalzium
+   fiji
 
    # CLI
    vim
@@ -123,6 +126,58 @@
    
    # Libraries
    tk
+   
+   # Office
+   libreoffice
+
+   # Entertainment
+   shortwave
+   gnome-podcasts
+
+   # Internet
+   mumble
+   obs-studio
+   newsflash
+   fractal
+   element-desktop
+   discord
+   pcloud
+   
+   # Graphics
+   inkscape
+   gimp3
+   switcheroo
+   scribus
+   eyedropper
+   pdfarranger
+ 
+   # Notes
+   rnote
+   xournalpp
+   iotas
+   logseq
+ 
+   # Writing
+   texmaker
+   citations
+   logseq
+
+   # Sound & Video
+   vlc
+   kdePackages.kdenlive
+   shotcut
+
+   # Reading
+   foliate
+   calibre
+   cozy
+   papers
+
+   # Utilities
+   impression
+   ghostty
+   solanum
+   blanket
       
   ];
 
@@ -140,11 +195,15 @@
    services.openssh.enable = true;
 
   # Open ports in the firewall.
-  # networking.firewall.allowedTCPPorts = [ ... ];
-  # networking.firewall.allowedUDPPorts = [ ... ];
+  networking.firewall.[ggplot2 ggraph dplyr dplyr tidyr survival
+    tidyverse shiny knitr]; };
+allowedTCPPorts = [ 64738 ];
+  networking.firewall.allowedUDPPorts = [ 64738 ];
+  
   # Or disable the firewall altogether.
   # networking.firewall.enable = false;
   
+  # Enalbe flatpak
   services.flatpak.enable = true;
 
   # Enable OpenGL
