@@ -195,9 +195,7 @@
    services.openssh.enable = true;
 
   # Open ports in the firewall.
-  networking.firewall.[ggplot2 ggraph dplyr dplyr tidyr survival
-    tidyverse shiny knitr]; };
-allowedTCPPorts = [ 64738 ];
+  networking.firewall.allowedTCPPorts = [ 64738 ];
   networking.firewall.allowedUDPPorts = [ 64738 ];
   
   # Or disable the firewall altogether.
