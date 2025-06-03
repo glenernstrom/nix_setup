@@ -178,6 +178,7 @@
    ghostty
    solanum
    blanket
+   deja-dup
       
   ];
 
