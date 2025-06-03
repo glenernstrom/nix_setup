@@ -95,13 +95,35 @@
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
-  environment.systemPackages = with pkgs; [
+  environment.systemPackages = with pkgs; 
+  let 
+
+    R-with-my-packages = rWrapper.override{ packages = with rPackages; [ ggplot2 ggraph dplyr dplyr tidyr survival
+    tidyverse shiny knitr]; };
+
+    RStudio-with-my-packages = rstudioWrapper.override{ packages = with rPackages; [ ggplot2 ggraph dplyr dplyr tidyr 
+    survival tidyverse shiny knitr]; };
+
+  in
+
+  [
+
+   # Science
+   RStudio-with-my-packages
+   R-with-my-packages
+   texliveFull
 
    # CLI
    vim
    wget
    git
    
+   # Media
+   yt-dlp
+   
+   # Libraries
+   tk
+      
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
