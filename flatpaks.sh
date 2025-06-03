@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 sudo flatpak install \
  com.obsproject.Studio \
@@ -28,3 +28,8 @@ sudo flatpak install \
  com.github.xournalpp.xournalpp \
  io.github.david_swift.Flashcards \
  com.mattjakeman.ExtensionManager \
+ org.kde.kalzium \
+ org.learningequality.Kolibri \
+ net.xm1math.Texmaker \	
+ 
+ 
