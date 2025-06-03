@@ -7,5 +7,7 @@
 5. Set the hostname
 6. Add vim, wget, and git to systemPackages
 7. Add flatpak support
-8. Set up git and gitrepo to back up the configuration file
+8. Install bitwarden
+9. Login to Firefox and github
+10. Set up git and gitrepo to back up the configuration file
 
