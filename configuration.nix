@@ -179,6 +179,7 @@
    solanum
    blanket
    deja-dup
+   gnome-extension-manager
       
   ];
 
