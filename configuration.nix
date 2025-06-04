@@ -180,6 +180,7 @@
    blanket
    deja-dup
    gnome-extension-manager
+   bitwarden
       
   ];
 
